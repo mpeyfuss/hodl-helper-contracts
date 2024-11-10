@@ -50,3 +50,12 @@ test-fuzz: fmt
 ##########################################
 slither:
 	poetry run slither .
+
+##########################################
+### Deploy HODLHelperV1.sol
+##########################################
+
+deploy_HODLHelperV1_sepolia: build
+	forge script script/Deploy.s.sol:DeployHODLHelperV1 --evm-version paris --rpc-url sepolia --ledger --sender ${SENDER} --broadcast
+	forge verify-contract $$(cat out.txt) src/HODLHelperV1.sol:HODLHelperV1 --chain sepolia --watch --constructor-args ${CONSTRUCTOR_ARGS}
+	@bash print_and_clean.sh
