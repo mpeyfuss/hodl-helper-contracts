@@ -1,0 +1,8 @@
+cache
+out
+broadcast
+docs
+lib
+env
+.env
+.DS_Store

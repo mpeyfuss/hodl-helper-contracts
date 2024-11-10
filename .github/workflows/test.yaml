@@ -1,0 +1,17 @@
+on: [push]
+
+name: Test
+
+jobs:
+  check:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+
+      - name: Install lib
+        run: make install
+
+      - name: Run unit tests
+        run: make test

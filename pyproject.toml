@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hodl-helper-contracts"
+version = "1.0.0"
+description = ""
+authors = ["mpeyfuss"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+slither-analyzer = "^0.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
