@@ -10,6 +10,8 @@ You can always add more tokens to an existing Lock, which again incurs the same 
 
 The tokens in a Lock can be withdrawn at any point, however, if withdrawn prior to the holding period ending, a 10% penalty is applied. This penalty is not applied if withdrawing after the holding period ends.
 
+For more information about the project, see this link: https://hackmd.io/@mpeyfuss/hodl-helper
+
 ## Deployments
 Each version is deployed to the same address across all supported EVM chains. The following chains are supported:
 - Ethereum
